@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(/img/bkg_login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteiner{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    border-radius: 22px;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+
+    
+}
+.alinar{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container-left{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+   
+    margin-left: 5%;
+    justify-content: center;
+    /* background-color: red; */
+}
+.container-left h1{
+    text-align: center;
+    font-weight: 700;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+#dermatologista{
+    width: 15% !important;
+    background-color: red;
+}
+.container-right{
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ position: absolute;
+ background-color: white;
+ height: 100%;
+ right: 0%;
+ z-index: 2;
+ 
+}
+.container-right img{
+    width: 100%;
+    
+}
+.preset-input{
+    width: 70%;
+    height: 64px;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    border-color: transparent;
+    outline: none;
+    padding-left: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 35px;
+
+}
+.btn-proximo{
+    background-color: #288CE8;
+    width: 90%;
+    height: 64px;
+    border-radius: 12px;
+    border-color: transparent;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 500ms;
+    
+}
+#floatingInput{
+    
+    width: 90%;
+    height: 64px;
+    background-color: #F3F3F3;
+    border-color: transparent;
+    padding-left: 7%;
+}
+
+#form-floating label{
+    
+    background-color: transparent;
+    
+}
+.label{
+    
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.form-floating > input:not(:focus):placeholder-shown + label {
+    background: transparent;
+}
+
+.form-floating > input + label:after {
+   background: transparent !important;
+}
+.slider{
+    display: flex;
+    overflow: hidden;
+    transition: 500ms;
+}
+.slider.active{
+    margin-left: -52%;
+}
+.btn-proximo:hover{
+    transform: scale(1.08);
+}
