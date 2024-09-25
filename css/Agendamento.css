@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+.container-agendamento{
+    margin-top: 3%;
+    /* background-color: red; */
+    display: flex;
+    gap: 15%;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* gap: 50px; */
+
+}
+.alinhar{
+    display: flex;
+    flex-direction: column;
+}
+.div-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    /* background-color: red; */
+    width: 400px;
+    
+}
+.titulo-page{
+    color: #38B6FF;
+    font-weight: 600;
+    margin-bottom: 10%;
+}
+.form-select{
+    width: 21%;
+    height: 64px;
+    outline: none;
+    border-radius: 12px;
+    border-color: transparent;
+    background-color: #F3F3F3;
+    padding-left: 45px;
+    position: absolute;
+    z-index: -6;
+}
+
+.form-select:focus{
+    border-color: transparent !important;
+    
+}
+
+.cbx{
+    display: flex;
+    z-index: 5;
+    align-items: center;
+
+    
+}
+.cbx img{
+    padding-left: 10px;
+}
+.cbx i{
+    padding-left: 18px;
+}
+.all-box{
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-preset{
+    width: 100%;
+    height: 64px;
+    outline: none;
+    border-radius: 12px;
+    border-color: transparent;
+    background-color: #F3F3F3;
+    padding-left: 45px;
+}
+::-webkit-calendar-picker-indicator{
+    /* background-color: #ffffff; */
+    margin-left: -33px;
+    font-size: 24px;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+    /* border-radius: 3px; */
+}
+.div-direito img{
+    width: 100%;
+    /* background-color: red; */
+}
+.btn{
+    width: 260px;
+    height: 55px;
+    border-color: transparent;
+    background-color: #069ce2;
+    outline: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    margin-top: 5%;
+    transition: 500ms;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.btn:hover{
+    transform: scale(1.03);
+    background-color: #069ce2;
+    color: white;
+
+}
+.alinhar-btn{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
