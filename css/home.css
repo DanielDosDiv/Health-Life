@@ -49,6 +49,7 @@ nav{
     display: flex;
     justify-content: center;
     width: 90%;
+    flex-direction: column;
     margin-top: 2%;
 }
 .medico{
@@ -176,7 +177,11 @@ nav{
     border-radius: 20px;
     border-color: transparent;
     box-shadow: 2px 0px 10px 0px #18396b27;
+    transition: 500ms;
     
+}
+.preset-btn:hover{
+    width: 350px;
 }
 .cirurgia{
      background-color: #e35e4738;
@@ -261,7 +266,7 @@ nav{
 }
 .container-passo-a-passo{
     display: flex;
-    margin-bottom: 380px;
+    margin-bottom: 2%;
     justify-content: center;
     /* gap: 5%; */
     margin-top: 10%;
@@ -282,6 +287,9 @@ nav{
     /* gap: 15px; */
     
 
+}
+.div-passo-a-passo{
+    margin-bottom: 5%;
 }
 .box-passo-a-passo:hover{
     cursor: pointer;
