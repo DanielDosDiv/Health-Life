@@ -27,17 +27,13 @@ nav{
     justify-content: center;
     display: flex;
     gap: 10px;
+    font-weight: 600;
+    font-size: 25px;
     color: #38B6FF;
-    transition: 500ms;
-
+    
+    
 }
-.meio-nav span:hover{
-    height:0.5px;
-    width: 100%;
-    border: #38B6FF  solid; 
-    transition: 500ms;
 
-}
 .logo{
     display: flex;
     justify-content: start;
@@ -54,6 +50,7 @@ nav{
 }
 .medico{
     display: flex;
+    flex-direction: column;
 }
 /* .meio-nav span{
     
@@ -199,6 +196,7 @@ nav{
     gap: 25px;
     display: flex;
  }
+ 
  .conteudo-sub-conteiner{
 
     display: flex;
@@ -325,4 +323,219 @@ nav{
 .arrow-animate{
     transform: rotate(450deg);
     /* background-color: red; */
+}
+.alinhar-linha{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.line-preset {
+    transition: width 500ms, opacity 700ms;
+    opacity: 0;
+    width: 0;
+    margin-top: 5px;
+    background-color: red;
+    border: solid 2px #38B6FF;
+}
+
+.item-nav:hover .line-preset {
+    width: 100%;
+    opacity: 1;
+}
+.user{
+    transition: 500ms;
+}
+.user:hover{
+    /* transform: scale(1.08); */
+    transform: translate(0%,-10%);
+}
+
+@media (max-width: 900px) {
+    .foto-perfil h1 {
+        font-size: 30px;
+        /* Para telas maiores */
+        width: 300px;
+        left: 120%;
+        font-size: 23px;
+        bottom: -10px;
+    }
+
+    .container-user-page {
+        margin-top: 12%;
+    }
+
+    .user {
+        margin-right: -60%;
+
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .titulo-info-conta {
+        font-weight: 700;
+        color: #38B6FF;
+        font-size: 23px;
+        margin-bottom: 5% !important;
+    }
+
+    .nav-web {
+        display: none;
+    }
+
+    .alinhar-info {
+        margin-left: -3%;
+    }
+
+}
+
+@media (max-width :760px) {
+    .container-user-page{
+        width: 105%;
+    }
+}
+@media (max-width: 800px) {
+    .foto-perfil h1 {
+        font-size: 15px;
+        /* Para telas maiores */
+        width: 300px;
+        left: 120%;
+        font-size: 18px;
+        bottom: -12px;
+
+    }
+
+    .container-user-page {
+        margin-top: 12%;
+    }
+
+    .user {
+        margin-right: -55%;
+
+    }
+
+
+    .nav-web {
+        display: none;
+    }
+
+    .titulo-info-conta {
+        font-weight: 700;
+        color: #38B6FF;
+        font-size: 18px;
+        margin-bottom: 5% !important;
+    }
+
+    .alinhar-info {
+        margin-left: 3%;
+    }
+
+    .nav-web {
+        display: none;
+    }
+
+}
+
+@media (max-width: 660px) {
+    .user {
+        margin-right: -45%;
+
+    }
+}
+
+@media (max-width: 414px) {
+    .foto-perfil h1 {
+        font-size: 15px;
+        /* Para telas maiores */
+        width: 300px;
+        left: 120%;
+        font-size: 18px;
+        bottom: -12px;
+
+    }
+
+    .container-user-page {
+        margin-top: 25%;
+    }
+
+    .user {
+        margin-right: -25%;
+
+    }
+
+
+    .nav-web {
+        display: none;
+    }
+
+    .titulo-info-conta {
+        font-weight: 700;
+        color: #38B6FF;
+        font-size: 18px;
+        margin-bottom: 5% !important;
+    }
+
+    .alinhar-info {
+        margin-left: 3%;
+    }
+
+    .nav-web {
+        display: none;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .foto-perfil h1 {
+        font-size: 15px;
+        /* Para telas maiores */
+        width: 300px;
+        left: 120%;
+        font-size: 18px;
+        bottom: -12px;
+    }
+
+    .alinhar-info {
+        margin-left: 10%;
+    }
+
+    .container-info-conta {
+        width: 100%;
+    }
+
+    .titulo-info-conta {
+        font-weight: 700;
+        color: #38B6FF;
+        font-size: 18px;
+        margin-bottom: 5% !important;
+    }
+
+    .nav-web {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .responsive-text {
+        font-size: 24px;
+        /* Para telas ainda maiores */
+    }
+
+    .titulo-info-conta {
+        font-weight: 700;
+        color: #38B6FF;
+        font-size: 25px;
+        margin-bottom: 5% !important;
+    }
+}
+@media (max-width: 540px) {
+    .user {
+        margin-right: -35%;
+
+    }
+}
+.navbar-toggler{
+    transition: 500ms;
 }

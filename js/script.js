@@ -25,6 +25,21 @@ function GoToEditUserPage() {
 var EditFoto = document.querySelector(".foto-perfil")
 var pincel = document.querySelector(".img-perfil i")
 var oacityPerfil = document.querySelector(".foto-perfil img")
+var ItemNav = document.querySelector(".item-nav")
+var lineAnimate = document.querySelector(".line-preset")
+var Calendario = document.querySelector(".calendario")
+
+
+
+Calendario.addEventListener("mousemove" ,()=>{
+    lineAnimate.classList.add("active")
+})
+ItemNav.addEventListener("mousemove", ()=>{
+    lineAnimate.classList.add("active")
+})
+ItemNav.addEventListener("mouseout", ()=>{
+    lineAnimate.classList.remove("active")
+})
 EditFoto.addEventListener("mousemove", ()=>{
     pincel.classList.add("active")
     // window.alert("Foi?")

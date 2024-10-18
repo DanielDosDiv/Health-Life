@@ -30,7 +30,7 @@
 
 <body>
     <!-- Inicio Nav Bar -->
-    <nav>
+    <nav class="nav-web">
         <a href="HomePage.html">
             <div class="logo">
                 <img src="img/Logos/logo_hospital_escrito.png" alt="">
@@ -38,24 +38,34 @@
         </a>
 
         <div class="meio-nav">
-            <div class="home">
+            <div class="home item-nav">
                 <a href="#">
                     <img src="img/Logos/home_logo.png" alt="">
                     Home
                 </a>
-                <span></span>
+                <div class="alinhar-linha">
+                    <div class="line-preset"></div>
+                </div>
             </div>
-            <div class="calendario">
+            <div class="calendario item-nav">
                 <a href="CalendarioPage.html">
                     <img src="img/Logos/calendario_icon.png" alt="">
                     Calendario
                 </a>
+                <div class="alinhar-linha" >
+                    <div class="line-preset"></div>
+                </div>
             </div>
-            <div class="medico">
+            <div class="medico item-nav">
                 <a href="MedicosPage.html">
                     <img src="img/Logos/medico_icon.png" alt="">
                     Médico
                 </a>
+                <div class="alinhar-linha">
+                    <div class="line-preset"></div>
+                </div>
+                
+                
             </div>
         </div>
         <div class="user">
@@ -63,6 +73,49 @@
         </div>
 
     </nav>
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a href="HomePage.html">
+                <div class="logo">
+                    <img src="img/Logos/logo_hospital_escrito.png" alt="">
+                </div>
+            </a>
+            <div class="user">
+                <img src="img/Logos/user_logo.png" alt="">
+            </div>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <img src="img/Logos/medico_icon.png" alt="">
+                  <a class="nav-link active" aria-current="page" href="MedicosPage.html">Médicos</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/Logos/calendario_icon.png" alt="">
+                  <a class="nav-link" href="CalendarioPage.html">Calendario</a>
+                </li>
+                <li class="nav-item">
+                        <img src="img/Logos/home_logo.png" alt="">
+                    <a class="nav-link active" aria-current="page" href="HomePage.html  ">Home</a>
+                  </li>
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
     <div class="container-user-page">
         <div class="wallpeiper-user">
             <img src="img/hospitais/wallpeiper_user.png" alt="">
@@ -84,59 +137,69 @@
 
                 <div class="conteiner-flex">
                     <div class="form-floating mb-3">
-                        <input type="textt"  class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="textt" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Nome</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Sobrenome</label>
                     </div>
                 </div>
                 <div class="form-floating input-inteiro mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                        value="Texto padrão" disabled>
                     <label for="floatingInput" class="label">Email</label>
                 </div>
                 <div class="form-floating input-inteiro mb-3">
-                    <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                    <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com"
+                        value="Texto padrão" disabled>
                     <label for="floatingInput" class="label">Senha</label>
                 </div>
                 <div class="conteiner-flex">
                     <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Data de Nacimento</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Telefone</label>
                     </div>
                 </div>
                 <div class="conteiner-flex">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Cargo</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">CEP</label>
                     </div>
                 </div>
                 <div class="conteiner-flex">
                     <div class="form-floating mb-3">
-                        <input type="email"  class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled value="Texto padrão" disabled>
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Estado</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="Texto padrão" disabled>
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            value="Texto padrão" disabled>
                         <label for="floatingInput" class="label">Cidade</label>
                     </div>
                 </div>
-               
+
             </div>
             <div class="buttons-container">
                 <button class="sair preset-buttons">
                     Sair
                 </button>
-                <button  class="salvar preset-buttons" onclick="GoToEditUserPage()">
+                <button class="salvar preset-buttons" onclick="GoToEditUserPage()">
                     Editar Informações
                 </button>
             </div>
