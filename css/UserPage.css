@@ -115,7 +115,7 @@ body {
         /* Para telas maiores */
         width: 300px;
         left: 120%;
-        font-size: 23px;
+        /* font-size: 23px; */
         bottom: -10px;
     }
 
@@ -135,7 +135,7 @@ body {
     .titulo-info-conta {
         font-weight: 700;
         color: #38B6FF;
-        font-size: 23px;
+        /* font-size: 23px; */
         margin-bottom: 5% !important;
     }
 
@@ -156,7 +156,7 @@ body {
 }
 @media (max-width: 800px) {
     .foto-perfil h1 {
-        font-size: 15px;
+        /* font-size: 15px; */
         /* Para telas maiores */
         width: 300px;
         left: 120%;
@@ -182,7 +182,7 @@ body {
     .titulo-info-conta {
         font-weight: 700;
         color: #38B6FF;
-        font-size: 18px;
+        /* font-size: 18px; */
         margin-bottom: 5% !important;
     }
 
@@ -231,7 +231,7 @@ body {
     .titulo-info-conta {
         font-weight: 700;
         color: #38B6FF;
-        font-size: 18px;
+        /* font-size: 18px; */
         margin-bottom: 5% !important;
     }
 
@@ -266,7 +266,7 @@ body {
     .titulo-info-conta {
         font-weight: 700;
         color: #38B6FF;
-        font-size: 18px;
+        /* font-size: 18px; */
         margin-bottom: 5% !important;
     }
 
@@ -285,7 +285,7 @@ body {
     .titulo-info-conta {
         font-weight: 700;
         color: #38B6FF;
-        font-size: 25px;
+        /* font-size: 25px; */
         margin-bottom: 5% !important;
     }
 }
@@ -301,6 +301,7 @@ body {
 .titulo-info-conta {
     font-weight: 700;
     color: #38B6FF;
+    font-size: 3.04rem;
     margin-bottom: 5% !important;
 }
 
@@ -317,7 +318,10 @@ body {
     text-align: center;
     margin-bottom: 2%;
 }
-
+#floatingInput{
+    font-size: 1.4rem;
+    height: 70px;
+}
 #floatingInput:disabled {
     background-color: rgb(238, 240, 241);
 }
@@ -331,8 +335,9 @@ body {
 }
 
 .form-floating {
-    height: 64px;
+    height: 40%;
     width: 46%;
+    font-size: 1.3rem;
 
 }
 

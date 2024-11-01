@@ -23,12 +23,55 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="shortcut icon" href="img/logo_navegador.png" type="image/x-icon">
+
 
 
 </head>
 
 <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a href="HomePage.html">
+                <div class="logo">
+                    <img src="img/Logos/logo_hospital_escrito.png" alt="">
+                </div>
+            </a>
+            <div class="user">
+                <img src="img/Logos/user_logo.png" alt="">
+            </div>
     
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <img src="img/Logos/medico_icon.png" alt="">
+                  <a class="nav-link active" aria-current="page" href="MedicosPage.html">Médicos</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/Logos/calendario_icon.png" alt="">
+                  <a class="nav-link" href="CalendarioPage.html">Calendario</a>
+                </li>
+                <li class="nav-item">
+                        <img src="img/Logos/home_logo.png" alt="">
+                    <a class="nav-link active" aria-current="page" href="HomePage.html  ">Home</a>
+                  </li>
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
     <!-- Inicio Nav Bar -->
     <nav class="nav-web">
         <a href="HomePage.html">
@@ -68,13 +111,18 @@
                 
             </div>
         </div>
+        <div class="togge-theme">
+            <i class="fa-solid fa-sun"></i>
+            <div class="btn-togge"></div>
+            <i class="fa-solid fa-moon"></i>
+        </div>
         <a href="UserPage.html">
-
+            
             <div class="user">
                 <img src="img/Logos/user_logo.png" alt="">
             </div>
         </a>
-
+        
     </nav>
 
     <!-- Fim nav Bar -->
@@ -193,7 +241,7 @@
                         <h1>Sempre que<p>você precisar</p>
                         </h1>
 
-                        <p style="font-weight: 300;">Você pode realizar uma consulta rapidamente com
+                        <p style="font-weight: 300; font-size: 17px;">Você pode realizar uma consulta rapidamente com
                             apenas alguns cliques.</p>
                     </div>
                     <div>
