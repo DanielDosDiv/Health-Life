@@ -796,7 +796,9 @@ body{
     color: #38b6ffd8;
 }
 [data-theme="dark"] .box-passo-a-passo{
-    border-color: white;
+    border-color: rgb(16, 95, 199);
+    box-shadow: 2px 0px 10px 0px #1463dacc;
+
 }
 [data-theme="dark"] .info-passo p{
     color: white !important;

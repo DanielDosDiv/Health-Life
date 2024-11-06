@@ -84,7 +84,7 @@ body{
     margin-right: -3%;
     align-items: center;
     display: flex;
-    
+    width: 50%;
     justify-content: center;
     flex-direction: column;
     margin-top: 9%;
